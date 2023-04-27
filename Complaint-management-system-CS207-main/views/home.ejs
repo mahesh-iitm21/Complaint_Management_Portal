@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    <%= title%>
+  </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id"
+    content="036092548333-p7hqijvo0ma1uvce00r47rrq5c9ctalq.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  button {
+    height: 40px;
+    width: 300px;
+    font-size: 22px;
+    background: transparent;
+    border-radius: 15%;
+    align-items: right;
+  }
+
+  header h1 {
+    color: #333;
+    font-family: 'Lilita One', cursive;
+  }
+
+  header ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header ul li {
+    display: inline-block;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  header ul li a:hover {
+    text-decoration: underline;
+  }
+
+  #homepage {
+    width: 100%;
+    height: 100%;
+  }
+
+  #homepage header {
+    padding: 20px;
+    background: white;
+  }
+
+  #homepage header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #homepage header h1 {
+    float: left;
+    margin: 0;
+  }
+
+  #homepage header ul {
+    float: right;
+  }
+
+  #homepage header ul li {
+    margin: 0 5px;
+  }
+
+  #homepage img {
+    display: inline-block;
+    width: 50%;
+    height: 25%;
+  }
+
+
+
+  #homepage {
+
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background: #ccc;
+    text-align: center;
+  }
+
+  #homepage header {
+    display: grid;
+  }
+
+  #homepage header h1,
+  #homepage header ul {
+    float: none;
+  }
+
+  #homepage img {
+    height: inherit;
+    width: 100%;
+    opacity: .3;
+    object-fit: cover;
+  }
+
+
+
+  #homepage {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    position: absolute;
+    z-index: 1;
+  }
+
+  #homepage header {
+    position: absolute;
+    z-index: 10;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 0;
+  }
+
+  #homepage header h1 {
+    display: grid;
+    align-items: end;
+    font-size: 60px;
+  }
+
+  #homepage header ul {
+    margin: 10px 0 0 0;
+  }
+</style>
+
+<body>
+
+  <div id="homepage">
+    <header>
+      <h1>IIT MANDI Complaint Portal</h1>
+      <ul>
+        <li>
+
+          <!-- <div class="g-signin2" data-onsuccess="onSignIn"> -->
+          <!-- <button><a href="/auth/google">Login using BITS Mail</a></button> -->
+          <button><a href="/users/register">Register</a></button>
+          <button><a href="/users/login">Login</a></button>
+          <button><a href="/admin/login">Login as admin</a></button>
+
+
+          <!--  </div> -->
+          <!-- <a href="#" onclick="signOut();">Sign out</a> -->
+
+        </li>
+      </ul>
+    </header>
+    <img id="showcase-1" src="https://iitmandi.ac.in/institute/campus/images/campus4.jpeg" />
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

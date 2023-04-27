@@ -1,0 +1,155 @@
+<title>
+  <%= title%>
+</title>
+<!DOCTYPE html>
+<html>
+
+<body>
+  <style>
+    body {
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      padding: 20px 150px 50px 450px;
+      font-size: larger;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    .button {
+      background-color: maroon;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 2px;
+      cursor: pointer;
+    }
+
+    .button4 {
+      border-radius: 12px;
+    }
+
+    input[type=text] {
+      border: 2px solid red;
+      border-radius: 6px;
+    }
+
+    .p {
+      font-family: Tahoma, Verdana, sans-serif;
+    }
+
+    select {
+      width: 20%;
+      padding: 8px 15px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: black;
+      z-index: 1;
+
+    }
+
+    input[type=text] {
+      width: 30%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: black;
+      z-index: 2;
+    }
+
+    input[type=password] {
+      width: 30%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: black;
+      z-index: 2;
+    }
+
+    img {
+      height: inherit;
+      width: 100%;
+      opacity: .3;
+      z-index: -1;
+      position: fixed;
+    }
+
+    option {
+      color: black;
+      z-index: 1;
+    }
+  </style>
+  <img src="https://iitmandi.ac.in/institute/campus/images/campus4.jpeg" alt="">
+
+  <div class="p">
+    <h1>Informed Resident of Campus? REGISTER and SHARE your COMPLAINTS</h1>
+    <form action="/users/create" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" value="" placeholder="Eg. Mahesh Kumar"><br><br>
+      <label for="roll_no">Roll Number:</label><br>
+      <input type="text" id="roll_no" name="roll_no" value="" placeholder="Eg. B21105"><br><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" value="" placeholder="********"><br><br>
+      <label for="room_num">Room Number:</label><br>
+      <input type="text" id="room_num" name="room_num" value="" placeholder="Eg. 006"><br><br>
+      <label for="hostel">Hostel: </label><br>
+      <select id="hostel" name="hostel">
+        <option value="Suraj Tal">Suraj Tal</option>
+        <option value="Beas Kund">Beas Kund</option>
+        <option value="Chandra Tal">Chandra Tal</option>
+        <option value="Gauri Kund">Gauri Kund</option>
+      </select><br><br><br>
+      <input type="submit" class="button button4" value="Submit" style="opacity:0.7;">
+
+    </form>
+    <br>
+    <p class="p" style="text-align:center;color:black">We are open to take Complaints and rectify them.</p>
+  </div>
+
+
+</body>
+
+</html>
+
+
+<!-- <form action="/users/create" method="post">
+    <label for="name">name</label>
+    <input type="name" name="name" required placeholder="Enter Your name">
+    <label for="roll_no">RollNo</label>
+    <input type="text" name="roll_no" placeholder="roll_no" required />
+    <label for="password">Password</label>
+    <input type="password" name="password" required placeholder="Enter Your Password">
+    <label for="room_no">RoomNo</label>
+    <input type="text" name="room_num" placeholder="RoomNo" required />
+    <label for="room_no">RoomNo</label>
+    <input type="text" name="room_num" placeholder="RoomNo" required />
+    <select name="hostel">
+        <option>Select Hostel</option> -->
+<!-- <option value="Suraj Tal">Suraj Tal</option>
+        <option value="Beas Kund">Beas Kund</option>
+       
+      </select>
+    <button type="submit">Register</button>
+</form> -->

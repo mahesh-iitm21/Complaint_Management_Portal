@@ -1,0 +1,54 @@
+Setting up the directory structure
+
+routes will store "/" "home" etc
+controllers will store functions that needs to be called
+models will store schemas
+config   will store  mongo config
+views will store Html files
+
+firing up the express server
+
+install express (npm install express)
+use express in index.js file
+
+
+const express = require('express')
+const app = express()
+const port = 8000;
+
+app.listen(port,function(err){
+    if(err){
+       
+        console.log(`Error: ${err}`)
+        // console.log('error: ',err) can be also written as console.log(`Error: ${err}`) Esc ke niche wali key
+    }
+    console.log(`Server is running on the port: ${port}`)
+})
+    
+
+we need to use nodemon index.js again and again
+
+Go to package.json
+Add this under scripts
+"start": "nodemon index.js",
+now you just have to do npm start
+
+Setting up the routes
+main file (entry point to routes is index.js)
+our main index.js will point tothis routes/index.js
+and now this routes/index.js will control the further routes
+We need to use express router module 
+
+
+Controller is a set of different actions
+
+ req,res wale fxn ko structurally likhne ka tarika
+ module.exports.actionName= function(req.res){}
+ specify its path in routes
+ const homeController= require('../controllers/home_controller')
+ router.get('/', homeController.home);
+
+ in our codeial app
+ forst req is sent to routes/index
+ then from there is it set to routes/users
+ router.use('/routerName', require('./routerFile'));

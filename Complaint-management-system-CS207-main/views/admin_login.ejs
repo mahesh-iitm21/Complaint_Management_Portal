@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<title>
+  <%= title%>
+</title>
+<html>
+
+<body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    div {
+      padding: 150px 150px 50px 450px;
+      font-size: larger;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    .button {
+      background-color: maroon;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 2px;
+      cursor: pointer;
+    }
+
+    .button4 {
+      border-radius: 12px;
+    }
+
+    input[type=text] {
+      border: 2px solid red;
+      border-radius: 6px;
+    }
+
+    .p {
+      font-family: Tahoma, Verdana, sans-serif;
+    }
+
+    input[type=text] {
+      width: 30%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    input[type=password] {
+      width: 30%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    img {
+      height: inherit;
+      width: 100%;
+      opacity: .3;
+      z-index: -1;
+      position: fixed;
+    }
+  </style>
+
+  <img src="https://iitmandi.ac.in/institute/campus/images/campus4.jpeg" alt="">
+
+  <div class="p">
+    <h1>Enter your Credentials</h1>
+    <form action="/admin/create-session" method="post">
+      <label for="name">UserName</label><br>
+      <input type="text" id="name" name="name" value=""><br><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" value="" placeholder="*********"><br><br>
+      <input type="submit" class="button button4" value="Submit" style="opacity:0.7;">
+    </form>
+    <br>
+    <p class="p" style="text-align:right;color:black">We are open to take Complaints and rectify them.</p>
+  </div>
+
+
+</body>
+
+</html>
