@@ -1,5 +1,15 @@
 # Complaint Management Portal
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+
+## INTRODUCTION  
 The Complaint Management Portal is a full-stack web application designed to facilitate the efficient handling of complaints and communication between users and administrators. It offers a user-friendly interface for users to register, submit complaints, and track the status of their complaints. Administrators have access to a separate dashboard for managing complaints, users, and communication.
 
 ## Features
