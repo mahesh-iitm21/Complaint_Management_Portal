@@ -61,7 +61,12 @@ The Complaint Management Portal is a full-stack web application designed to faci
 
   
 ## Screenshots
-Include screenshots of your application here to give users a visual overview of the interface.
+
+- ![Methodology](./Complaint-management-system-CS207-main/CMP/methodology.png)
+- ![Login and Register](./Complaint-management-system-CS207-main/CMP/loginRegister.png)
+- ![HomePage and Complaint](./Complaint-management-system-CS207-main/CMP/homeComplaint.png)
+- ![Profile](./Complaint-management-system-CS207-main/CMP/profile.png)
+- ![History and Contacts](./Complaint-management-system-CS207-main/CMP/historyContact.png)
 
 ## Contributing
 If you'd like to contribute to this project, please follow these steps:
