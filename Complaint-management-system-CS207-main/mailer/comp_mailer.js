@@ -5,12 +5,12 @@ const nodeMailer = require('../config/nodemailer');
 exports.newComp = (complaint) => {
     var maillist = [
          complaint.roll + "@students.iitmandi.ac.in",
-        'harsh100pahwa@gmail.com'
+        'mahesh.iitmnd@gmail.com'
       ];
     console.log(maillist);
     // let htmlString = nodeMailer.renderTemplate('mail.ejs');
     nodeMailer.transporter.sendMail({
-        from: 'b21100@students.iitmandi.ac.in',
+        from: 'b21105@students.iitmandi.ac.in',
         to: maillist,
         subject: "New Complaint Published!",
         //TODO
